@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Campus Attendance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Campus Attendance</h1>
+    </header>
+    <main>
+        <!-- Student Section -->
+        <section class="student-checkin">
+            <h2>Student Attendance Check-In</h2>
+            <form id="attendanceForm">
+                <label for="studentId">Student ID:</label>
+                <input type="text" id="studentId" placeholder="Enter your ID" required>
+                <button type="submit">Mark Attendance</button>
+            </form>
+            <p id="statusMessage"></p>
+        </section>
+
+        <!-- Teacher Section -->
+        <section class="teacher-dashboard">
+            <h2>Teacher Dashboard</h2>
+            <h3>Attendance List</h3>
+            <ul id="attendanceList">
+                <li>No students have checked in yet.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Smart Campus</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
